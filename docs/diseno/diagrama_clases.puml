@@ -1,0 +1,67 @@
+@startuml diagrama_clases
+' Diagrama de clases - Libreria (Primer Examen Programacion III - UPB)
+' Debe coincidir exactamente con las clases Kotlin del proyecto.
+
+title Diagrama de clases - Libreria
+
+' Motor de dibujo interno (no requiere Graphviz instalado)
+!pragma layout smetana
+
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam dpi 200
+skinparam nodesep 60
+skinparam ranksep 70
+skinparam classAttributeIconSize 0
+skinparam defaultFontName Arial
+skinparam defaultFontSize 14
+skinparam ArrowColor #333333
+skinparam class {
+  BackgroundColor #FFF8E1
+  BorderColor #5D4037
+  HeaderBackgroundColor #FFE0B2
+}
+
+class Autor {
+  + id: Int
+  + nombre: String
+  + nacionalidad: String
+  + toString(): String
+}
+
+class Categoria {
+  + id: Int
+  + nombre: String
+  + descripcion: String
+  + toString(): String
+}
+
+class Libro {
+  + id: Int
+  + titulo: String
+  + precio: Double
+  + descripcion: String
+  + stock: Int
+  + autor: Autor
+  + categoria: Categoria
+  + estaDisponible(): Boolean
+  + precioFormateado(): String
+}
+
+class Libreria {
+  + nombre: String
+  - libros: MutableList<Libro>
+  + agregarLibro(libro: Libro): Unit
+  + obtenerLibros(): List<Libro>
+  + buscarPorId(id: Int): Libro?
+  + obtenerCategorias(): List<Categoria>
+}
+
+' Composicion: la libreria contiene sus libros
+Libreria "1" *-- "0..*" Libro : contiene >
+
+' Asociaciones: cada libro tiene un autor y una categoria
+Libro "*" --> "1" Autor : escrito por >
+Libro "*" --> "1" Categoria : pertenece a >
+
+@enduml
