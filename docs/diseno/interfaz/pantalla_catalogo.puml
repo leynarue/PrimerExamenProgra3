@@ -1,0 +1,36 @@
+@startsalt pantalla_catalogo
+' Boceto de la Pantalla 1: Catalogo de libros
+' Los datos del boceto son los mismos de crearLibreriaDeEjemplo().
+scale 1.5
+{+
+  <size:18><b>Librería Central
+  ==
+  { <b>[ Todas ] | [ Novela ] | [ Infantil ] | [ Ciencia ] | [ Clásicos ] }
+  ==
+  {+
+    <b>Cien años de soledad
+    Gabriel García Márquez
+    { Novela | . | . | . | <b>Bs. 95.00 }
+  }
+  {+
+    <b>El principito
+    Antoine de Saint-Exupéry
+    { Infantil | . | . | . | <b>Bs. 60.00 }
+  }
+  {+
+    <b>Breve historia del tiempo
+    Stephen Hawking
+    { Ciencia | . | . | . | <b>Bs. 110.00 }
+  }
+  {+
+    <b>Don Quijote de la Mancha
+    Miguel de Cervantes
+    { Clásicos | . | . | . | <b>Bs. 130.00 }
+  }
+  {+
+    <b>1984
+    George Orwell
+    { Novela | . | . | . | <b>Bs. 85.00 }
+  }
+}
+@endsalt

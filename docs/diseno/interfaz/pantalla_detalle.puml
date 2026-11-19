@@ -1,0 +1,23 @@
+@startsalt pantalla_detalle
+' Boceto de la Pantalla 2: Detalle del libro
+' Los datos del boceto son los mismos de crearLibreriaDeEjemplo().
+scale 1.5
+{+
+  { [ Volver ] | . | <b>Detalle del libro }
+  ==
+  <size:18><b>Cien años de soledad
+  { Novela | . | . | . | <b>Bs. 95.00 }
+  --
+  <b>Descripción
+  La historia de la familia Buendía a lo largo
+  de siete generaciones en el pueblo de Macondo.
+  --
+  <b>Autor
+  { Nombre: | Gabriel García Márquez }
+  { Nacionalidad: | Colombia }
+  --
+  { <b>Disponibilidad: | Disponible (12 en stock) }
+  ==
+  [ Volver al catálogo ]
+}
+@endsalt
