@@ -1,0 +1,78 @@
+﻿Evidencia de compilacion y ejecucion - PrimerExamenProgra3
+Fecha: 2026-11-19 08:57
+Commit base: 84a7579
+
+== Comando: .\gradlew.bat clean assembleDebug testDebugUnitTest ==
+Calculating task graph as no cached configuration is available for tasks: clean assembleDebug testDebugUnitTest
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:clean
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:desugarDebugFileDependencies
+> Task :app:validateSigningDebug
+> Task :app:generateDebugResources
+> Task :app:extractDeepLinksDebug
+> Task :app:writeDebugAppMetadata
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:javaPreCompileDebug
+> Task :app:mapDebugSourceSetPaths
+> Task :app:javaPreCompileDebugUnitTest
+> Task :app:mergeDebugAssets
+> Task :app:processDebugNavigationResources
+> Task :app:compressDebugAssets
+> Task :app:mergeDebugJniLibFolders
+> Task :app:compileDebugNavigationResources
+> Task :app:writeDebugSigningConfigVersions
+> Task :app:checkDebugDuplicateClasses
+> Task :app:mergeDebugNativeLibs
+> Task :app:checkDebugAarMetadata
+> Task :app:mergeLibDexDebug
+
+> Task :app:stripDebugDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libandroidx.graphics.path.so. Run with --info option to learn more.
+
+> Task :app:processDebugMainManifest
+> Task :app:processDebugManifest
+> Task :app:processDebugManifestForPackage
+> Task :app:packageDebugResources
+> Task :app:parseDebugLocalResources
+> Task :app:generateDebugRFile
+> Task :app:generateDebugGlobalSynthetics
+> Task :app:mergeDebugResources
+> Task :app:mergeExtDexDebug
+> Task :app:processDebugResources
+> Task :app:compileDebugKotlin
+> Task :app:compileDebugJavaWithJavac NO-SOURCE
+> Task :app:compressDebugJavaRes
+> Task :app:bundleDebugClassesToRuntimeJar
+> Task :app:bundleDebugClassesToCompileJar
+> Task :app:dexBuilderDebug
+> Task :app:mergeDebugJavaResource
+> Task :app:mergeProjectDexDebug
+> Task :app:packageDebug
+> Task :app:assembleDebug
+> Task :app:createDebugApkListingFileRedirect
+> Task :app:compileDebugUnitTestKotlin
+> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:compressDebugUnitTestJavaRes
+> Task :app:extractDebugUnitTestJavaRes
+> Task :app:testDebugUnitTest
+
+BUILD SUCCESSFUL in 45s
+44 actionable tasks: 44 executed
+Configuration cache entry stored.
+
+exit gradle: 0
+
+== APK generado ==
+app-debug.apk - 12085331 bytes
+
+== Ejecucion en emulador ==
+Modelo: sdk_gphone64_x86_64
+Android: 16 (API 36)
+Performing Streamed Install
+Success
+Starting: Intent { cmp=com.example.primerexamenprogra3/.MainActivity }
+topResumedActivity=ActivityRecord{218794438 u0 com.example.primerexamenprogra3/.MainActivity t48}
